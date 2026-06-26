@@ -1,0 +1,537 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- SEO Optimization -->
+    <title>Arusuvai Virundhu Catering Service | Premium Service Boys & Welcome Girls</title>
+    <meta name="description"
+        content="Arusuvai Virundhu Catering Service provides highly trained and professional manpower for all types of events. We specialize in Service Boys, Welcome Girls, and Event Hospitality Staff in Chennai.">
+
+    <!-- Google Fonts: Luxurious combinations -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Outfit:wght@300;400;500;600&display=swap"
+        rel="stylesheet">
+
+    <!-- AOS Animation Library -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <!-- FontAwesome for Premium Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- EmailJS Integration -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script type="text/javascript">
+        (function () {
+            emailjs.init("gCMCjw8_mKUhf1BbF");
+        })();
+    </script>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <!-- Custom Cursor -->
+    <div class="cursor-dot"></div>
+    <div class="cursor-outline"></div>
+
+    <!-- Header Section (Glassmorphism) -->
+    <header class="header" id="header">
+        <div class="container navbar">
+            <a href="#" class="logo" data-aos="fade-right">
+                <img src="images/gallery/logo1.png" alt="Arusuvai Virundhu Catering Service Logo" class="site-logo">
+            </a>
+            <nav class="nav-links">
+                <a href="#home" class="nav-link active">Home</a>
+                <a href="#about" class="nav-link">About Us</a>
+                <a href="#services" class="nav-link">Services</a>
+                <a href="#events" class="nav-link">Events</a>
+                <a href="#gallery" class="nav-link">Gallery</a>
+                <a href="#booking" class="nav-link btn-nav">Book Now</a>
+                <div class="nav-translate">
+                    <div id="google_translate_element"></div>
+                    <div class="language-switcher">
+                        <button type="button" class="lang-btn active" data-lang="en">ENG</button>
+                        <button type="button" class="lang-btn" data-lang="ta">தமிழ்</button>
+                    </div>
+                </div>
+            </nav>
+            <div class="menu-toggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section (Parallax & Video/Dynamic BG) -->
+    <section id="home" class="hero">
+        <div class="hero-bg"></div>
+        <div class="hero-particles" id="particles-js"></div>
+        <div class="hero-content container">
+            <div class="hero-text-wrapper" data-aos="zoom-out-up" data-aos-duration="1500">
+                <span class="subtitle">Experience Luxury</span>
+                <h1 class="hero-headline">Arusuvai Virundhu</h1>
+                <h2 class="hero-subheadline">Catering Service</h2>
+                <p class="hero-tagline">"We Serve with a Smile, You Enjoy the Moments."</p>
+                <div class="hero-buttons">
+                    <a href="#booking" class="btn btn-glow">Book Your Event</a>
+                    <a href="tel:+919080892810" class="btn btn-outline-glow"><i class="fas fa-phone"></i> Contact Us</a>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <span>Scroll</span>
+            <div class="mouse"></div>
+        </div>
+    </section>
+
+    <!-- Booking Form Section (Centered Premium Form) -->
+    <section id="booking" class="booking section">
+        <div class="container">
+            <div class="booking-centered-card" data-aos="zoom-in">
+                <div class="booking-card-header">
+                    <div class="booking-header-icon">
+                        <i class="fas fa-calendar-check"></i>
+                    </div>
+                    <h2 class="booking-card-title">Book Your Event</h2>
+                    <p class="booking-card-subtitle">Fill in the details below and we'll craft the perfect hospitality experience for your special occasion.</p>
+                    <div class="booking-header-line"></div>
+                </div>
+                <form id="booking-form" class="modern-form">
+                    <div class="input-row">
+                        <div class="input-group">
+                            <input type="text" id="name" name="name" required placeholder=" ">
+                            <label for="name"><i class="fas fa-user"></i> Full Name</label>
+                        </div>
+                        <div class="input-group">
+                            <input type="tel" id="phone" name="phone" required placeholder=" ">
+                            <label for="phone"><i class="fas fa-phone"></i> Phone Number</label>
+                        </div>
+                    </div>
+                    <div class="input-row">
+                        <div class="input-group">
+                            <input type="email" id="email" name="email" required placeholder=" ">
+                            <label for="email"><i class="fas fa-envelope"></i> Email Address</label>
+                        </div>
+                        <div class="input-group">
+                            <input type="date" id="event_date" name="event_date" required placeholder=" ">
+                            <label for="event_date" class="active"><i class="fas fa-calendar"></i> Event Date</label>
+                        </div>
+                    </div>
+                    <div class="input-row">
+                        <div class="input-group">
+                            <select id="event_type" name="event_type" required>
+                                <option value="" disabled selected>Select Event Type</option>
+                                <option value="Marriage Function">Marriage Function</option>
+                                <option value="Wedding Reception">Wedding Reception</option>
+                                <option value="Engagement Function">Engagement Function</option>
+                                <option value="Birthday Function">Birthday Function</option>
+                                <option value="Baby Shower">Baby Shower</option>
+                                <option value="House Warming">House Warming</option>
+                            </select>
+                        </div>
+                        <div class="input-group">
+                            <select id="session" name="session" required>
+                                <option value="" disabled selected>Select Session</option>
+                                <option value="Breakfast">Breakfast</option>
+                                <option value="Lunch">Lunch</option>
+                                <option value="Dinner">Dinner</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="input-row">
+                        <div class="input-group">
+                            <select id="service" name="service" required>
+                                <option value="" disabled selected>Required Service</option>
+                                <option value="Service Boys">Service Boys</option>
+                                <option value="Welcome Girls">Welcome Girls</option>
+                                <option value="Both">Both (Recommended)</option>
+                            </select>
+                        </div>
+                        <div class="input-group">
+                            <input type="text" id="event_location" name="event_location" required placeholder=" ">
+                            <label for="event_location"><i class="fas fa-map-marker-alt"></i> Event Location (Venue)</label>
+                        </div>
+                    </div>
+                    <div class="input-row input-row-3col">
+                        <div class="input-group">
+                            <input type="number" id="num_boys" name="num_boys" min="0" placeholder=" ">
+                            <label for="num_boys"><i class="fas fa-male"></i> Number of Boys</label>
+                        </div>
+                        <div class="input-group">
+                            <input type="number" id="num_girls" name="num_girls" min="0" placeholder=" ">
+                            <label for="num_girls"><i class="fas fa-female"></i> Number of Girls</label>
+                        </div>
+                        <div class="input-group">
+                            <input type="number" id="guests" name="guests" required placeholder=" ">
+                            <label for="guests"><i class="fas fa-users"></i> Expected Guests</label>
+                        </div>
+                    </div>
+                    <div class="input-group">
+                        <textarea id="message" name="message" rows="3" placeholder=" "></textarea>
+                        <label for="message"><i class="fas fa-comment-dots"></i> Additional Requirements (Optional)</label>
+                    </div>
+                    <button type="submit" id="submit-btn" class="submit-btn-glow">
+                        <span class="btn-text">Confirm Booking Request</span>
+                        <i class="fas fa-arrow-right icon-right"></i>
+                        <span class="spinner" style="display: none;"><i class="fas fa-circle-notch fa-spin"></i></span>
+                    </button>
+                    <div id="form-alert" class="alert-message" style="display: none;"></div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Us Section -->
+    <section id="about" class="about section">
+        <div class="container about-grid">
+            <div class="about-image-wrapper" data-aos="fade-right" data-aos-duration="1200">
+                <div class="image-frame">
+                    <img src="images/gallery/About11.jpeg" alt="About Arusuvai Virundhu"
+                        class="about-real-img">
+                    <div class="floating-badge" data-aos="zoom-in" data-aos-delay="500">
+                        <span class="number">5+</span>
+                        <span class="text">Years Experience</span>
+                    </div>
+                </div>
+            </div>
+            <div class="about-text" data-aos="fade-left" data-aos-duration="1200">
+                <h4 class="section-subtitle">Discover Our Story</h4>
+                <h2 class="section-title">Elevating Every Occasion with Traditional Hospitality</h2>
+                <p class="lead">Arusuvai Virundhu Catering Service provides trained and professional manpower for all
+                    types of premium events in Chennai.</p>
+                <div class="features-list">
+                    <div class="feature-item" data-aos="fade-up" data-aos-delay="100">
+                        <div class="icon-box"><i class="fas fa-user-tie"></i></div>
+                        <div>
+                            <h4>Elite Service Boys</h4>
+                            <p>Impeccably dressed, highly trained serving staff.</p>
+                        </div>
+                    </div>
+                    <div class="feature-item" data-aos="fade-up" data-aos-delay="200">
+                        <div class="icon-box"><i class="fas fa-spa"></i></div>
+                        <div>
+                            <h4>Traditional Welcome Girls</h4>
+                            <p>Warm, cultural reception for your honorable guests.</p>
+                        </div>
+                    </div>
+                    <div class="feature-item" data-aos="fade-up" data-aos-delay="300">
+                        <div class="icon-box"><i class="fas fa-users-cog"></i></div>
+                        <div>
+                            <h4>Complete Hospitality Staff</h4>
+                            <p>End-to-end event manpower management.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section (Interactive 3D Cards) -->
+    <section id="services" class="services section bg-pattern">
+        <div class="container">
+            <div class="section-header text-center" data-aos="fade-up">
+                <h4 class="section-subtitle">What We Do</h4>
+                <h2 class="section-title text-center">Our Premium Services</h2>
+            </div>
+            <div class="services-grid">
+                <div class="service-card-3d" data-aos="flip-left" data-aos-delay="100">
+                    <div class="card-inner">
+                        <div class="card-front">
+                            <img src="images/boys.jpeg" alt="Service Boys" class="service-icon-img">
+                            <h3>Service Boys</h3>
+                            <div class="card-line"></div>
+                        </div>
+                        <div class="card-back">
+                            <p>Professional, staff who understand traditional dining etiquette and
+                                modern catering needs.</p>
+                            <a href="#booking" class="btn btn-sm">Book Now</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="service-card-3d" data-aos="flip-up" data-aos-delay="200">
+                    <div class="card-inner">
+                        <div class="card-front">
+                            <img src="images/gallery/welcomegirls.jpeg" alt="Welcome Girls" class="service-icon-img">
+                            <h3>Welcome Girls</h3>
+                            <div class="card-line"></div>
+                        </div>
+                        <div class="card-back">
+                            <p>Elegant welcome girls to greet your guests with rose water, sandal, and traditional Tamil
+                                hospitality.</p>
+                            <a href="#booking" class="btn btn-sm">Book Now</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="service-card-3d" data-aos="flip-right" data-aos-delay="300">
+                    <div class="card-inner">
+                        <div class="card-front">
+                            <img src="images/gallery/eventstaf.jpeg" alt="Event Staff" class="service-icon-img">
+                            <h3>Event Staff</h3>
+                            <div class="card-line"></div>
+                        </div>
+                        <div class="card-back">
+                            <p>Complete event coordination manpower including ushers, VIP handlers, and dining managers.
+                            </p>
+                            <a href="#booking" class="btn btn-sm">Book Now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Events We Cover Section (Hover Reveal) -->
+    <section id="events" class="events section">
+        <div class="container">
+            <div class="section-header text-center" data-aos="fade-up">
+                <h4 class="section-subtitle">Moments We Make Special</h4>
+                <h2 class="section-title text-center">Events We Cover</h2>
+            </div>
+            <div class="events-interactive-grid">
+                <div class="event-box" data-aos="zoom-in" data-aos-delay="100">
+                    <div class="event-bg" style="background-image: url('images/gallery/Marriage\ Function.jpeg');">
+                    </div>
+                    <div class="event-content">
+                        <i class="fas fa-rings"></i>
+                        <h3>Marriage Function</h3>
+                    </div>
+                </div>
+                <div class="event-box" data-aos="zoom-in" data-aos-delay="200">
+                    <div class="event-bg" style="background-image: url('images/gallery/Wedding\ Reception.jpeg');">
+                    </div>
+                    <div class="event-content">
+                        <i class="fas fa-glass-cheers"></i>
+                        <h3>Wedding Reception</h3>
+                    </div>
+                </div>
+                <div class="event-box" data-aos="zoom-in" data-aos-delay="300">
+                    <div class="event-bg" style="background-image: url('images/gallery/weding.jpeg');"></div>
+                    <div class="event-content">
+                        <i class="fas fa-gem"></i>
+                        <h3>Engagement Function</h3>
+                    </div>
+                </div>
+                <div class="event-box" data-aos="zoom-in" data-aos-delay="400">
+                    <div class="event-bg" style="background-image: url(images/gallery/hbd.jpeg) ;"></div>
+                    <div class="event-content">
+                        <i class="fas fa-birthday-cake"></i>
+                        <h3>Birthday Function</h3>
+                    </div>
+                </div>
+                <div class="event-box" data-aos="zoom-in" data-aos-delay="500">
+                    <div class="event-bg" style="background-image:url('images/gallery/BabyShower.jpeg') ;"></div>
+                    <div class="event-content">
+                        <i class="fas fa-baby"></i>
+                        <h3>Baby Shower</h3>
+                    </div>
+                </div>
+                <div class="event-box" data-aos="zoom-in" data-aos-delay="600">
+                    <div class="event-bg" style="background-image: url(images/gallery/home.png)">
+                    </div>
+                    <div class="event-content">
+                        <i class="fas fa-home"></i>
+                        <h3>House Warming</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Us (Dark Luxury) -->
+    <section class="why-choose-us section dark-luxury">
+        <div class="container">
+            <div class="section-header text-center" data-aos="fade-up">
+                <h4 class="section-subtitle">The Arusuvai Difference</h4>
+                <h2 class="section-title text-center text-gradient">Why Choose Us</h2>
+            </div>
+            <div class="features-grid">
+                <div class="glass-card feature-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="glow-icon"><i class="fas fa-clock"></i></div>
+                    <h4>On-Time Service</h4>
+                    <p>Punctuality is our hallmark. We arrive before time, every time.</p>
+                </div>
+                <div class="glass-card feature-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="glow-icon"><i class="fas fa-medal"></i></div>
+                    <h4>Trained Staff</h4>
+                    <p>Rigorous hospitality training ensures a flawless guest experience.</p>
+                </div>
+                <div class="glass-card feature-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="glow-icon"><i class="fas fa-handshake"></i></div>
+                    <h4>Reliable Team</h4>
+                    <p>A coordinated team led by experienced captains for smooth execution.</p>
+                </div>
+                <div class="glass-card feature-card" data-aos="fade-up" data-aos-delay="400">
+                    <div class="glow-icon"><i class="fas fa-star"></i></div>
+                    <h4>Customer Satisfaction</h4>
+                    <p>100% commitment to making your event memorable and stress-free.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Meet Our Founders Section -->
+    <section id="contact" class="founders-section section">
+        <div class="container">
+            <div class="section-header text-center" data-aos="fade-up">
+                <h4 class="section-subtitle">Leadership</h4>
+                <h2 class="section-title text-center">Meet Our Founders</h2>
+                <p class="founders-intro" data-aos="fade-up" data-aos-delay="100">The passionate entrepreneurs behind Arusuvai Virundhu Catering Service,<br>committed to raising the standards of hospitality in Chennai.</p>
+            </div>
+
+            <div class="founders-grid">
+                <!-- Founder 1: Dany Ichzan D -->
+                <div class="founder-premium-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="founder-card-top founder-card-top--burgundy">
+                        <div class="founder-initials-circle founder-has-photo">
+                            <img src="images/gallery/dany1.jpeg" alt="Dany Ichzan D" class="founder-circle-photo">
+                            
+                        </div>
+                        <h3 class="founder-name">Dany Ichzan D.[B.E]</h3>
+                        <span class="founder-designation">Founder & Managing Director</span>
+                    </div>
+                    <div class="founder-card-bottom">
+                        <p class="founder-bio">"Dany Ichzan D brings years of expertise in event management and hospitality. His dedication to quality and punctuality has made Arusuvai Virundhu a trusted name across Chennai."</p>
+                        <div class="founder-contact-info">
+                            <a href="tel:+919080892810" class="founder-contact-link">
+                                <i class="fas fa-phone-alt"></i>
+                                <span>+91 90808 92810</span>
+                            </a>
+                            <a href="mailto:arusuvaicateringservice1106@gmail.com" class="founder-contact-link">
+                                <i class="fas fa-envelope"></i>
+                                <span>arusuvaicateringservice1106@gmail.com</span>
+                            </a>
+                        </div>
+                        <a href="https://wa.me/919080892810" target="_blank" class="founder-whatsapp-btn">
+                            <i class="fab fa-whatsapp"></i>
+                            <span>Chat on WhatsApp</span>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Founder 2: Logesh Kumar P -->
+                <div class="founder-premium-card" data-aos="fade-up" data-aos-delay="250">
+                    <div class="founder-card-top founder-card-top--green">
+                        <div class="founder-initials-circle founder-has-photo">
+                            <img src="images/gallery/LOGESH.jpeg" alt="Logesh Kumar P" class="founder-circle-photo"> 
+                        </div>
+                        <h3 class="founder-name">Logesh Kumar P [BBA]</h3>
+                        <span class="founder-designation">Founder & Operations Head</span>
+                    </div>
+                    <div class="founder-card-bottom">
+                        <p class="founder-bio">"Logesh Kumar P oversees day-to-day operations and team management. His hands-on approach and eye for detail ensures every event is executed flawlessly with a personal touch."</p>
+                        <div class="founder-contact-info">
+                            <a href="tel:+919380071630" class="founder-contact-link">
+                                <i class="fas fa-phone-alt"></i>
+                                <span>+91 93800 71630</span>
+                            </a>
+                            <a href="mailto:arusuvaicateringservice1106@gmail.com" class="founder-contact-link">
+                                <i class="fas fa-envelope"></i>
+                                <span>arusuvaicateringservice1106@gmail.com</span>
+                            </a>
+                        </div>
+                        <a href="https://wa.me/919380071630" target="_blank" class="founder-whatsapp-btn">
+                            <i class="fab fa-whatsapp"></i>
+                            <span>Chat on WhatsApp</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Contact Strip -->
+            <div class="contact-strip" data-aos="fade-up" data-aos-delay="300">
+                <div class="contact-strip-item">
+                    <div class="contact-strip-icon"><i class="fas fa-map-marker-alt"></i></div>
+                    <div>
+                        <strong>Office Location</strong>
+                        <p>East Tambaram, Chennai, Tamil Nadu</p>
+                    </div>
+                </div>
+                <div class="contact-strip-divider"></div>
+                <div class="contact-strip-item">
+                    <div class="contact-strip-icon"><i class="fas fa-phone-alt"></i></div>
+                    <div>
+                        <strong>Call Us</strong>
+                        <p><a href="tel:+919080892810">90808 92810</a> / <a href="tel:+919380071630">93800 71630</a></p>
+                    </div>
+                </div>
+                <div class="contact-strip-divider"></div>
+                <div class="contact-strip-item">
+                    <div class="contact-strip-icon"><i class="fas fa-envelope"></i></div>
+                    <div>
+                        <strong>Email Us</strong>
+                        <p><a href="mailto:arusuvaicateringservice1106@gmail.com">arusuvaicateringservice1106@gmail.com</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-content">
+            <div class="footer-brand">
+                <h2 class="footer-brand-name">Arusuvai Virundhu</h2>
+                <p class="footer-brand-tagline">Six Tastes, One Grand Feast</p>
+                <p class="footer-brand-desc">Chennai's trusted event manpower partner since our founding. We serve with dignity, elegance, and a smile that makes every celebration unforgettable.</p>
+                <div class="footer-brand-actions">
+                    <a href="https://wa.me/919080892810" target="_blank" class="btn-sm btn-footer-action"><i class="fab fa-whatsapp"></i> WhatsApp</a>
+                    <a href="tel:+919080892810" class="btn-sm btn-footer-action"><i class="fas fa-phone-alt"></i> Call</a>
+                </div>
+            </div>
+            <div class="footer-links">
+                <h3>QUICK LINKS</h3>
+                <a href="#home">Home</a>
+                <a href="#about">About Us</a>
+                <a href="#services">Services</a>
+                <a href="#gallery">Events We Cover</a>
+                <a href="#gallery">Gallery</a>
+                <a href="#booking">Contact</a>
+            </div>
+            <div class="footer-contact">
+                <h3>CONTACT</h3>
+                <ul class="event-list">
+                    <li><i class="fas fa-map-marker-alt" style="color: #c94f5b;"></i> East Tambaram, Chennai</li>
+                    <li><i class="fas fa-phone-alt" style="color: #c94f5b;"></i> 90808 92810</li>
+                    <li><i class="fas fa-phone-alt" style="color: #c94f5b;"></i> 93800 71630</li>
+                    <li><i class="fas fa-envelope" style="color: #a4968d;"></i> arusuvaicateringservice1106@gmail.com</li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; <span id="year"></span> Arusuvai Virundhu Catering Service. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Floating Actions -->
+    <div class="floating-actions">
+        <a href="https://wa.me/919080892810" target="_blank" class="f-btn whatsapp pulse-anim" aria-label="WhatsApp">
+            <i class="fab fa-whatsapp"></i>
+        </a>
+        <a href="tel:+919080892810" class="f-btn call" aria-label="Call">
+            <i class="fas fa-phone-alt"></i>
+        </a>
+    </div>
+
+    <!-- Scripts -->
+    <script type="text/javascript">
+        function googleTranslateElementInit() {
+            new google.translate.TranslateElement({
+                pageLanguage: 'en',
+                includedLanguages: 'en,ta'
+            }, 'google_translate_element');
+        }
+    </script>
+    <script type="text/javascript"
+        src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
